@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Event</title>
+        <script>
+            // 이벤트를 연결합니다.
+            window.onload = function () {
+                // 문서 객체를 선택합니다.
+                let input_1 = document.getElementById("number1");
+                let input_2 = document.getElementById("number2");
+                // input_1
+                input_1.onkeydown = function () {
+                    // 글자 개수가 6개 이상일 때
+                    if (4 <= input_1.value.length) {
+                        // input_2 문서 객체로 포커스를 이동합니다.
+                        input_2.focus();
+                    }
+                }; input_2.onkeydown = function (event) {
+                    // 이벤트 객체를 추출합니다.
+                    if (4 <= input_2.value.length) {
+                        // input_2 문서 객체로 포커스를 이동합니다.
+                        input_2.blur();
+                    }
+                    event = event || window.event;
+                    // 사용자의 입력이 '백 스페이스'이고 입력된 글자가 없을 때
+                    if (event.keyCode == 8 && input_2.value.length == 0) {
+                        input_1.focus();
+                    }
+                };
+            };
+        </script>
+        <style>
+            fieldset {
+                border-radius: 20px;
+                width: 500px;
+                margin: auto;
+                margin-top: 100px;
+            }
+
+            input[type="text"] {
+                width: 55%;
+                border: 0.2px solid black;
+                height: 100%;
+            }
+            input[type="number"] {
+                width: 15%;
+                border: 0.2px solid black;
+                height: 100%;
+            }
+            select[type="number"] {
+                width: 15%;
+                border: 0.2px solid black;
+                height: 100%;
+            }
+            .container {
+                display: grid;
+                gap: 10px;
+                grid-templete-columns: repeat(2, 1fr);
+                grid-templete-rows: repeat(2, 1fr);
+            }
+
+            .a {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                text-align: center;
+            }
+
+            .b {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                text-align: right;
+
+            }
+
+            .c {
+                grid-column-start: 2;
+                grid-column-end: 3;
+
+            }
+
+            .d {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+<body>
+    <fieldset>
+        <div class="container">
+            <div class="a">input form</div>
+            <div class="b">first name</div>
+            <div class="d"><input id="name" type="text"></div>
+            <div class="b">last name</div>
+            <div class="d"><input id="Name" type="text"></div>
+            <div class="b">Phone number</div>
+            <div class="d">
+                <select type="number" maxlength="4">
+                    <option>010</option>
+                    <option>031</option>
+                    <option>041</option>
+                    <option>02</option>
+                    <option>070</option>
+                    <option>011</option>
+                    <option>080</option>
+                </select>
+                <span>-</span>
+                <input type="number" id="number1" maxlength="4" >
+                <span>-</span>
+                <input type="number"id="number2" maxlength="4">
+            </div>
+            <div class="b">gender</div>
+            <div class="d"><input id="man" type="radio" name="gender" value="m">
+                <label for="man">남자</label>
+
+                <input id="woman" type="radio" name="gender" value="w">
+                <label for="woman">여자</label><br>
+            </div>
+            <div class="a"><input type="submit"></div>
+
+        </div>
+    </fieldset>
+
+</body>
+
+</html>

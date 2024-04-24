@@ -1,9 +1,106 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hello!</title>
-    </head>
-    <h1>hello world!</h1>
-    <p>응애 나야....</p>
-    <p>제발요 dk dksehlwksg진짜 되냐dk진짜..</p>
+
+<head>
+    <title>login</title>
+    <style>
+
+        input[type="email"] {
+            background-color: red;
+        }
+
+        #header >h1 {
+            color: red;
+        }
+
+        #section h1 {
+            color: orange;
+        }
+        input:focus{
+            background: pink;
+        }
+        input[type="radio"]
+        {
+            accent-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1 class="title">Lorem ipsum</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title">Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <h1>CSS3 선택자 기본</h1>
+    <!--입력양식을 위미하는 form method데이터 전달 action 전달장소-->
+    <form method="post">
+
+        <input type="text" name="search">
+        <input type="submit"><br>
+        <!--<input type="image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEyMTBfODAg%2FMDAxNzAyMTcyMDUzMjEx.db95AIbb8F9EMU3un95AGOfMJRqYE27T_qr1BJMDRfog.EC6wHTrdACzZhtTtp_Fzg5l-zj7P8rAbSU3YUTMqbRog.JPEG.tete_a__tete%2FInternet%25A3%25DF20231210%25A3%25DF102040%25A3%25DF3.jpeg&type=a340">-->
+        <hr>
+        <fieldset>
+            <table>
+                <tr>
+                    <td><label for="name">이름</label></td>
+                    <td><input id="name"  type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">이메일</label></td>
+                    <td><input id="mail"  type="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="birth">생일</label></td>
+                    <td><input id="birth" disabled="disabled" type="text" minlength="6" maxlength="6"></td> <br>
+                </tr>
+                <tr>
+                    <td><label for="id">아이디</label></td>
+                    <td><input type="text" id="id" required><br></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">비밀번호</label></td>
+                    <td><input type="password" id="pass" name="password" minlength="8" required /></td>
+                    <br>
+                </tr>
+                <tr>
+                    <td><label for="birth">생년월일6자리</label></td>
+                    <td>
+                        <input id="birth" type="text" minlength="6" maxlength="6"> <br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><input id="man" type="radio" name="gender" value="m">
+                        <label for="man">남자</label>
+
+                        <input id="woman" type="radio" name="gender" value="w">
+                        <label for="woman">여자</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><select>
+                            <option>SKT</option>
+                            <option>KT</option>
+                            <option>LG U+</option>
+                        </select></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">전화번호</label></td>
+                    <td><input id="phone" type="text" maxlength="11" value="010" required> <br></td>
+                </tr>
+            </table>
+            <input type="submit">
+        </fieldset>
+        <textarea>Textarea 태그Textarea 태그</textarea>
+    </form>
+
+</body>
+
 </html>

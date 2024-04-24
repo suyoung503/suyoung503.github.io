@@ -1,9 +1,152 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hello!</title>
-    </head>
-    <h1>hello world!</h1>
-    <p>응애 나야....</p>
-    <p>이건 잘되면서 help me제발..</p>
+
+<head>
+    <title>start</title>
+    <script>
+        let abc = 35;
+        let array = [273, '문자열'
+            , true, function () { }, {}, [32, 103]];
+        // 객체를 선언합니다.
+        let product = {
+            제품명: '7D 건조 망고'
+            ,
+            유형:
+                '당절임'
+            ,
+            성분:
+                '망고, 설탕, 메타중아황산나트륨, 치자황색소'
+            ,
+            원산지:
+                '필리핀'
+        };
+        // 출력합니다.
+        for (let i in product) {
+            alert(i + ':' + product[i]);
+        }
+        alert(array);
+        if (abc) {
+            console.log("hello");
+        }
+        alert('프로그램 종료');
+    </script>
+    <style>
+        figure {
+            border: 1p solid #A8A8A8;
+            background-color: #EDEDDD;
+            margin: 0;
+            padding: 5px;
+            width: 300px;
+            float: left;
+            margin: 10px;
+
+        }
+
+        figcaption.popup {
+            padding: 10px;
+            background: #FFCB5A;
+            position: absolute;
+            box-shadow: 0 0 15px #A9A9A9;
+            display: none;
+        }
+
+        figure.thumbnail:hover figcaption.popup {
+            position: absolute;
+            top: 0;
+            left: 100px;
+            display: block;
+        }
+
+        img {
+            display: block;
+            width: 300px;
+            height: 150px;
+        }
+
+        #div1 {
+            width: 350px;
+            height: 250px;
+            background-color: beige;
+
+        }
+
+        .container {
+            background-color: #4AB2D6;
+            width: 600px;
+            margin: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .container div {
+            background-color: #90CFEC;
+            flex: 1 1 150px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+            padding: 10px;
+            /* 태그를 왼쪽으로 붙입니다. */
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Float Example</h1>
+    <p>fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕
+        fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕
+
+    </p>
+
+    <figure> class="thumbnail">
+        <img src="british.jpeg" alt="...">
+        <figcaption class="popup">
+            <img src="british.jpeg" alt="...">
+            <p>British museum</p>
+        </figcaption>
+    </figure>
+    <div class="container">
+        <div>flex tem 1</div>
+        <div>flex item 2</div>
+        <div>felx item 3</div>
+        <div>flex item 4</div>
+        <div>flex item 5</div>
+
+    </div>
+    <!--#이 꼭 붙어야 아디로 이동 아니면 없이 다른 사이트주소-->
+    <!--하퍼기능없앨시 href에#만 입력, 첫번째로 인식-->
+    <a href="#gamma">Gamma 부분</a>
+    <p>이벤트 콜백 어쩌구 여러개의
+        흐름?대다나ㅏ다fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕
+        fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕
+
+    </p>
+    <p>fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕
+        fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕
+
+    </p>
+    <p>fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕
+        fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕
+
+    </p>
+    <p>fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕
+        fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕fvrbtrr안녕
+
+    </p>
+    <h1 id="gamma">Gam</h1>
+    <p>맨 밑에 오도록 설정됨Integer nibh tellus, tristique quis blandit quis, consequat</p>
+
+    <div class="box">1</div>
+    <div class="box">2</div>
+    
+</body>
+
 </html>
